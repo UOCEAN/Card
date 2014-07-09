@@ -21,6 +21,9 @@
 		5C37E748196BCB5C002042F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C37E72A196BCB5C002042F4 /* UIKit.framework */; };
 		5C37E750196BCB5C002042F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C37E74E196BCB5C002042F4 /* InfoPlist.strings */; };
 		5C37E752196BCB5C002042F4 /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C37E751196BCB5C002042F4 /* CardTests.m */; };
+		5C37E75D196BD0C4002042F4 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C37E75C196BD0C4002042F4 /* Card.m */; };
+		5CB1593E196CDD860024E815 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1593D196CDD860024E815 /* Deck.m */; };
+		5CB15941196D3EE60024E815 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB15940196D3EE60024E815 /* PlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		5C37E74D196BCB5C002042F4 /* CardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardTests-Info.plist"; sourceTree = "<group>"; };
 		5C37E74F196BCB5C002042F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C37E751196BCB5C002042F4 /* CardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTests.m; sourceTree = "<group>"; };
+		5C37E75B196BD0C4002042F4 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		5C37E75C196BD0C4002042F4 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		5CB1593C196CDD860024E815 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = ../Deck.h; sourceTree = "<group>"; };
+		5CB1593D196CDD860024E815 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = ../Deck.m; sourceTree = "<group>"; };
+		5CB1593F196D3EE60024E815 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		5CB15940196D3EE60024E815 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,12 @@
 		5C37E72C196BCB5C002042F4 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				5CB1593F196D3EE60024E815 /* PlayingCard.h */,
+				5CB15940196D3EE60024E815 /* PlayingCard.m */,
+				5CB1593C196CDD860024E815 /* Deck.h */,
+				5CB1593D196CDD860024E815 /* Deck.m */,
+				5C37E75B196BD0C4002042F4 /* Card.h */,
+				5C37E75C196BD0C4002042F4 /* Card.m */,
 				5C37E735196BCB5C002042F4 /* AppDelegate.h */,
 				5C37E736196BCB5C002042F4 /* AppDelegate.m */,
 				5C37E738196BCB5C002042F4 /* Main.storyboard */,
@@ -249,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB15941196D3EE60024E815 /* PlayingCard.m in Sources */,
+				5CB1593E196CDD860024E815 /* Deck.m in Sources */,
 				5C37E73D196BCB5C002042F4 /* ViewController.m in Sources */,
 				5C37E737196BCB5C002042F4 /* AppDelegate.m in Sources */,
 				5C37E733196BCB5C002042F4 /* main.m in Sources */,
+				5C37E75D196BD0C4002042F4 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +474,7 @@
 				5C37E757196BCB5C002042F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C37E758196BCB5C002042F4 /* Build configuration list for PBXNativeTarget "CardTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +483,7 @@
 				5C37E75A196BCB5C002042F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
